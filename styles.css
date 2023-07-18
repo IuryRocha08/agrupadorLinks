@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bkb-mb.png);
   --strock-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0,0,0, 0.02);
@@ -15,12 +15,12 @@
 }
 
 .light {
-  --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
-  --strock-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.1);
-  --surface-color-hover: rgba(0,0,0, 0.01);
-  --hightlight-color: rgba(0,0,0, 0.2);
+  --text-color: #1F1D1B;
+  --bg-url: url(./assets/bkw-mb.png);
+  --strock-color: rgba(128, 68, 44, 0.8);
+  --surface-color: rgba(31, 28, 27, 0.1);
+  --surface-color-hover: rgba(31, 28, 27, 0.01);
+  --hightlight-color: rgba(31, 28, 27, 0.2);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -52,7 +52,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background: rgb(255, 249, 246) var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -77,7 +77,7 @@ body * {
   width: 64px;
   height: 24px;
   background: var(--surface-color);
-  border: 1px solid var(--strock-color);
+  border: 2px solid var(--strock-color);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
@@ -113,18 +113,19 @@ ul li a {
   justify-content: center;
   padding: 16px 24px;
   background: var(--surface-color);
-  border: 1px solid var(--strock-color);
+  border: 3px solid var(--strock-color);
   border-radius: 8px;
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
+  backdrop-filter: blur(5px);
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
+  border: 2.8px solid var(--strock-color);
   
 }
 
@@ -143,7 +144,7 @@ ul li a:hover {
   justify-content: center;
   padding: 16px;
   border-radius: 50%;
-  transition: background 0.2s ease;
+  transition: background 0.5s ease;
 }
 
 #social-links a:hover {
@@ -159,11 +160,11 @@ footer {
 /* midia queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/bkb.png);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/bkw.png);
   }
 }
 
